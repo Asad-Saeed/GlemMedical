@@ -1,0 +1,93 @@
+/* Course.css */
+.watchlist-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs container */
+.watchlist-container .tabs {
+    display: flex;
+    justify-content: center; /* Center the tabs */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eaeaea; /* Bottom border */
+    flex-wrap: wrap; /* Allow tabs to wrap */
+}
+
+/* Individual Tab */
+.watchlist-container .tab {
+    width: 250px; /* Default width for larger screens */
+    padding: 12px; /* Increased padding for a better look */
+    background-color: #fdfdfd;
+    color: #444;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    margin: 5px; /* Space between tabs */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    font-size: 1rem; /* Slightly larger font size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Last Tab Margin */
+.watchlist-container .tab:last-child {
+    margin-right: 0; /* Remove margin from the last tab */
+}
+
+/* Hover Effect for Tabs */
+.watchlist-container .tab:hover {
+    background-color: #eaeaea; /* Lighter background on hover */
+    transform: translateY(-1px); /* Slight lift on hover */
+}
+
+/* Active Tab Style */
+.watchlist-container .tab.active {
+    background-color: #1ab69d; /* Active tab background color */
+    color: white; /* Active tab text color */
+    font-weight: bold; /* Bold text for the active tab */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow for active tab */
+}
+
+/* Tab Content Styling */
+.watchlist-container .tab-content {
+    padding: 20px; /* Increased padding for content area */
+    border: 1px solid #eaeaea; /* Border for the content area */
+    border-radius: 0 0 10px 10px; /* Rounded corners */
+    background-color: white; /* White background for content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for content */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .watchlist-container .tab {
+        width: calc(33.33% - 10px); /* Three tabs per row */
+    }
+}
+
+@media (max-width: 900px) {
+    .watchlist-container .tab {
+        width: calc(50% - 10px); /* Two tabs per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .watchlist-container .tab {
+        width: calc(100% - 10px); /* One tab per row */
+        margin: 5px 0; /* Adjust margin for vertical layout */
+    }
+}
+
+@media (max-width: 320px) {
+    .watchlist-container .tab {
+        font-size: 0.85rem; /* Slightly smaller font size for very small screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .watchlist-container .tab-content {
+        padding: 15px; /* Adjust padding for content area */
+    }
+}

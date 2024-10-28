@@ -1,0 +1,271 @@
+/* General structure */
+.component-margin {
+    margin: 20px 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h3 .gms-btn {
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    height: auto;
+    margin-left: 10px;
+}
+
+h3 {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.curriculum--curriculum-sub-header--QqY6d {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.curriculum--content-length--V3vIz {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Buttons */
+.gms-btn {
+    border: solid 1px #1ab69d;
+    background-color: #1ab69d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.gms-btn:hover {
+    background-color: #1ab69d;
+    transform: translateY(-1px);
+}
+
+/* Accordion Panels */
+.accordion-panel-module--panel--Eb0it {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 5px;
+    padding: 8px 0;
+}
+
+.gms-accordion-panel-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.section--section-title-container--Hd9vI {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    transition: color 0.2s ease;
+    padding: 4px 0;
+}
+
+.section--section-title-container--Hd9vI:hover {
+    color: #3498db;
+}
+
+.section--section-content--2mUJ7 {
+    font-size: 0.85rem;
+    color: #FFF;
+    margin-left: 15px;
+}
+
+.gms-icon {
+    color: #FFF;
+    font-size: 0.9rem;
+    margin-left: 8px;
+}
+
+/* Lesson items */
+.section--previewable-item---IMY- {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #ecf0f1;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+    transition: box-shadow 0.2s ease;
+}
+
+.section--previewable-item---IMY-:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gms-block-list-item-content {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #34495e;
+}
+
+.lesson-icon {
+    margin-right: 10px;
+    color: #7f8c8d;
+}
+
+.section--item-title--EWIuI {
+    font-size: 0.9rem;
+    color: #FFF;
+}
+
+.section--item-title--EWIuI:hover {
+    color: #1ab69d;
+    text-decoration: none;
+    background-color: #FFF;
+    border: 1px solid #1ab69d;
+}
+
+/* Preview button inside lessons */
+.section--preview-button {
+    color: #FFF;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-right: 8px;
+    transition: color 0.2s ease;
+    background-color: #1ab69d;
+    text-decoration: none;
+    border: solid 1px #1ab69d;
+}
+
+.section--preview-button:hover {
+    background-color: #FFF;
+    color: #1ab69d;
+    border: solid 1px #1ab69d;
+}
+
+
+/* Enhanced Modal for media preview */
+.styled-media-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: #000;
+    color: white;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    padding: 15px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Modal overlay with smooth transitions */
+.styled-media-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9998;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Adjust the close button to be at the top-right corner edge */
+.styled-modal-close-button {
+    position: absolute;
+    top: -13px; /* Push it slightly outside the modal */
+    right: -13px; /* Align it with the right edge */
+    background-color: #6c757db0;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+/* Modern close button hover effect */
+.styled-modal-close-button:hover {
+    background-color: #1ab69d;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Close button icon styling */
+.styled-modal-close-button .fa-times {
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+/* Player or document container */
+.react-player {
+    width: 100%;
+    height: 80%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.pdf-preview {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Mobile hidden content */
+.section--hidden-on-mobile---ITMr {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .section--item-summary {
+        display: none;
+    }
+
+    .section--previewable-item---IMY- {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .section--hidden-on-mobile---ITMr {
+        display: inline;
+    }
+}

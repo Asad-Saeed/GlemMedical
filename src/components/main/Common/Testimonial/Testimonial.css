@@ -1,0 +1,109 @@
+
+.client_card {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.84);
+    -webkit-backdrop-filter: blur(5.5px);
+    backdrop-filter: blur(5.5px);
+    padding: 20px;
+    max-width: 558px;
+}
+.client-img-wraper img {
+    /* top: -40px; */
+    position: relative;
+    z-index: 10000;
+    border-radius: 50px;
+}
+.client_slider .slick-vertical .slick-slide{
+    margin-left: 70px;
+}
+/* Custom styles for slider arrows */
+.client_slider .slick-prev, .client_slider  .slick-next {
+    width: 50px !important;
+    height: 50px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+.client_slider .slick-next {
+    /* left: -24px !important; */
+    left: 0;
+    top: 32%;
+}
+.client_slider .slick-prev {
+    /* left: -24px !important; */
+    top: 62%;
+    left: -61px;
+}
+.client_slider .slick-prev {
+    background-image: url('../../../../assets/images/slide-down-arrow.png') !important; /* Path to your next arrow image */
+    right: -60px; /* Adjust the position as needed */
+    background-color: #1AB69D;
+}
+
+.client_slider .slick-next {
+    background-image: url('../../../../assets/images/slide-up-arrow.svg') !important; /* Path to your previous arrow image */
+    left: -60px; 
+    background-color: #fff;/* Adjust the position as needed */
+}
+.client_slider .slick-next:hover, .client_slider .slick-next:focus {
+    border-color: #1AB69D;
+
+}
+.client_slider .slick-prev:hover,.client_slider .slick-prev:focus {
+    border-color: #1AB69D;
+    background-color: #1AB69D;
+}
+
+/* Optional: Hide default arrow icons */
+.client_slider .slick-prev:before,.client_slider .slick-next:before {
+    display: none;
+}
+.one-side-fency-heading {
+    position: relative;
+    width: max-content;
+}
+.one-side-fency-heading::after {
+    position: absolute;
+    right: -41px;
+    width: 30px;
+    height: 2px;
+    background: #1AB69D;
+    content: '';
+    bottom: 10px;
+}
+.testimonial-content {
+    margin-top: 13px;
+}
+@media only screen and (max-width: 1550px) {
+    .client_slider{
+        position: relative;
+        left: 40px;
+    }
+    .client_card {
+        max-width:90%;
+    }
+    .client_slider .slick-prev, .client_slider  .slick-next {
+        width: 35px !important;
+        height: 35px !important;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .client_slider .slick-vertical .slick-slide {
+        margin-left: 33px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main_client_wrapper .section-heading-wraper{
+        margin-bottom: 30px;
+    }
+    .client_slider {
+        left: 0;
+    }
+    .client_reommendation.gradientb--bg-wraper {
+        padding-bottom: 78px;
+    }
+}

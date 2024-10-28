@@ -1,0 +1,12 @@
+.eye-icon {
+    position: absolute;
+    right: 0;
+    top: 47px;
+    right: 20px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1500px) {
+.eye-icon {
+    top: 33px;
+}
+}

@@ -1,0 +1,123 @@
+.popular-courses-wraper{padding: 0 0 70px 0;}
+.course-img-wraper {
+  width: 104px;
+  height: 104px;
+  border-radius: 50px;
+}
+.courses-detail-box{
+  border-radius: 8px;
+  background: #FFFCFC;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  padding: 17px;
+}
+.course-description {
+  margin-left: 20px;
+  width: calc(100% - 180px);
+}
+h5.course-price {
+  font-size: 22px;
+  font-weight: 700;
+}
+.course-image {
+  max-width: 172px;
+  height: 100%;
+}
+.course-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+ul.star-list {
+  list-style-type: none;
+  display: flex;
+  color: #FFC803;
+}
+ul.star-list li{margin-right: 10px;}
+.course-rating {
+  display: flex;
+  align-items: center;
+}
+ul.course-member {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+ul.course-member li{
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.what-u-learn-list{
+  list-style-type: none;
+}
+.what-u-learn-list li{margin-bottom: 10px;padding-left: 30px;position: relative;}
+.what-u-learn-list li::before{
+  position: absolute;
+  left: 0;
+  content: '';
+  background-image: url(../../../assets/images/bi_check.png);
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+}
+.courses_list .courses-detail-box{
+  height: 100%;
+}
+.courses_list .course-image {
+  height: 100%;
+}
+@media only screen and (max-width: 1199px) {
+  .courses_list .courses-detail-box{
+    flex-direction: column;
+  }
+  .courses_list .course-description{width: 100%;}
+  .courses_list .course-image {
+    height: 200px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+  ul.contact_info li {
+    margin-bottom: 10px;
+  }
+  ul.contact_info {
+    margin-top: 25px;
+}
+}
+@media only screen and (max-width: 767px) {
+  .filer-box {
+    max-width: 400px;
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .courses-detail-box {
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+}
+.course-description{
+  width: 100%;
+  margin-left: 0;
+}
+.course-image {
+  max-width: 100%;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+h5.course-price {
+  line-height: 22px;
+  margin-bottom: 18px;
+}
+.filer-box {
+  max-width: 300px;
+}
+}

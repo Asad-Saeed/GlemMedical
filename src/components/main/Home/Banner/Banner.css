@@ -1,0 +1,114 @@
+.main-baner{
+    background-image: url(../../../../assets/images/baner-bg.png);
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.baner-content {
+    max-width: 660px;
+}
+.baner-content h1 div{
+    margin-bottom: 15px;
+}
+.baner-content p{
+   margin-bottom: 70px;
+}
+h5.bg-heading {
+    color: #000000A3;
+    padding: 15px 30px;
+    background: #1AB69D1A;
+    border-radius: 0 19px 0 0;
+    width: max-content;
+    margin-bottom: 15px;
+}
+.baner-left-side,.baner-right-side {
+    max-width: 50%;
+}
+.baner-slider {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+/* Custom styles for slider arrows */
+.hero-slider .slick-prev, .hero-slider  .slick-next {
+    width: 50px !important;
+    height: 50px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+.hero-slider .slick-next {
+    right: -67px !important;
+    top: 39%;
+    transform: rotate(90deg);
+}
+
+.hero-slider .slick-prev {
+    left: -54px !important;
+    top: 39%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.hero-slider .slick-prev {
+    background-image: url('../../../../assets/images/slide-down-arrow.png') !important; /* Path to your next arrow image */
+    right: -60px; /* Adjust the position as needed */
+    left:unset;
+    background-color: #1AB69D;
+}
+
+.hero-slider .slick-next {
+    background-image: url('../../../../assets/images/slide-up-arrow.svg') !important; /* Path to your previous arrow image */
+    background-color: #fff;/* Adjust the position as needed */
+}
+.hero-slider .slick-next:hover, .hero-slider .slick-next:focus {
+    border-color: #1AB69D;
+
+}
+.hero-slider .slick-prev:hover,.hero-slider .slick-prev:focus {
+    border-color: #1AB69D;
+    background-color: #1AB69D;
+}
+
+/* Optional: Hide default arrow icons */
+.hero-slider .slick-prev:before,.hero-slider .slick-next:before {
+    display: none;
+}
+.baner-content p {
+    margin-bottom: 45px;
+  }
+@media only screen and (max-width: 1550px) {
+    .baner-right-wraper img{max-width: 80%;}
+}
+@media only screen and (max-width: 1199px) {
+.baner-left-side{
+    max-width: 60%;
+}
+.baner-right-side {
+    max-width: 40%;
+}
+.main-baner.hero-slider .slick-dots {
+    bottom: unset;
+}
+.baner-content p {
+    margin-bottom: 25px;
+}
+
+}
+@media only screen and (max-width: 992px) {
+.baner-slider{flex-direction: column;}
+.baner-left-side, .baner-right-side{max-width: 100%;}
+.baner-content {
+    max-width: 100%;
+}
+}
+@media only screen and (max-width: 768px) {
+    .baner-right-side{margin-top: 25px;}
+    
+}

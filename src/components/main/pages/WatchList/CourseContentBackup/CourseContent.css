@@ -1,0 +1,309 @@
+/* General Styles for the Component */
+.component-margin {
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+/* Course Curriculum Section */
+[data-purpose="course-curriculum"] {
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    border: 1px solid #eaeaea;
+    transition: all 0.3s ease-in-out;
+}
+
+[data-purpose="course-curriculum"]:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Main Heading Styles */
+.gms-heading-xl {
+    font-size: 1.2rem; /* Base size */
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    text-align: left;
+    border-bottom: 2px solid #1ab69d;
+    padding-bottom: 8px;
+}
+
+/* Curriculum Sub-header Styles */
+.curriculum--curriculum-sub-header--QqY6d {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+/* Stats Text */
+.gms-text-sm {
+    font-size: 0.8rem; /* Slightly smaller base */
+    color: #666;
+    font-style: italic;
+}
+
+/* Button Styles */
+.gms-btn {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1ab69d;
+    background-color: #f8f9fa;
+}
+
+.gms-btn-ghost {
+    padding: 6px 12px;
+}
+
+.gms-btn-ghost:hover {
+    background-color: rgba(26, 182, 157, 0.1);
+    color: #1ab69d;
+    border: 1px solid #1ab69d;
+}
+
+/* Accordion Panel Styles */
+.accordion-panel-module--panel--Eb0it {
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion-panel-module--panel--Eb0it:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Section Header */
+.gms-accordion-panel-heading {
+    background-color: #f8f9fa;
+    padding: 0px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-bottom: 1px solid #eaeaea;
+    flex-wrap: wrap;
+}
+
+/* Modified h3 Style */
+.gms-accordion-panel-heading.section--section-title-container--Hd9vI h3 {
+    font-size: 1rem; /* Default size for desktop */
+    margin: 0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+/* Adjusted h3 Sizes for Different Breakpoints */
+@media (min-width: 1400px) {
+    .gms-accordion-panel-heading.section--section-title-container--Hd9vI h3 {
+        font-size: 1.3rem; /* Size for larger screens */
+    }
+}
+
+@media (max-width: 1024px) {
+    .gms-accordion-panel-heading.section--section-title-container--Hd9vI h3 {
+        font-size: 1.1rem; /* Size for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .gms-accordion-panel-heading.section--section-title-container--Hd9vI h3 {
+        font-size: 0.95rem; /* Size for small screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .gms-accordion-panel-heading.section--section-title-container--Hd9vI h3 {
+        font-size: 0.85rem; /* Size for extra small screens */
+    }
+}
+
+@media (max-width: 320px) {
+    .gms-accordion-panel-heading.section--section-title-container--Hd9vI h3 {
+        font-size: 0.7rem; /* Size for very small screens */
+    }
+}
+
+/* Accordion Panel Title */
+.gms-accordion-panel-title {
+    font-size: 0.9rem; /* Adjusted base size */
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.section--section-title--svpHP {
+    padding-right: 8px;
+}
+
+/* Chevron Icon */
+.gms-icon {
+    width: 12px; /* Reduced size */
+    height: 12px;
+    transition: transform 0.3s ease;
+    color: #333;
+}
+
+[aria-expanded="true"] .gms-icon {
+    transform: rotate(90deg);
+}
+
+/* Lesson Item Styles */
+.lesson-icon {
+    margin-right: 10px;
+    color: #1ab69d;
+    font-size: 0.75rem; /* Smaller icon size */
+    vertical-align: middle;
+}
+
+.gms-block-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border-bottom: 1px solid #eaeaea;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.gms-block-list-item:hover {
+    background-color: rgba(26, 182, 157, 0.05);
+}
+
+/* Lesson Title */
+.section--item-title--EWIuI {
+    font-weight: 500;
+    flex-grow: 1;
+    text-align: left;
+    font-size: 0.85rem; /* Smaller title */
+    color: #444;
+}
+
+/* Summary Section */
+.section--item-summary {
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem; /* Reduced size */
+    color: #666;
+}
+
+/* Preview Button */
+.section--preview-button {
+    margin-right: 10px;
+    background-color: #1ab69d;
+    color: #fff;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-size: 0.7rem; /* Smaller button text */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.section--preview-button:hover {
+    background-color: #0078b5;
+}
+
+/* Duration Text */
+.section--item-content-summary--Aq9em {
+    font-size: 0.7rem; /* Smaller summary text */
+    color: #666;
+}
+
+/* Responsive Breakpoints */
+
+/* Extra Large screens (1920px) */
+@media (min-width: 1400px) {
+    .gms-heading-xl {
+        font-size: 1.5rem; /* Larger heading for big screens */
+    }
+    .gms-text-sm {
+        font-size: 1rem; /* Bigger stats text */
+    }
+    .gms-btn-ghost {
+        padding: 10px 20px;
+    }
+}
+
+/* Medium screens (1024px) */
+@media (max-width: 1024px) {
+    .gms-heading-xl {
+        font-size: 1.3rem; /* Reduced size */
+    }
+    .gms-text-sm {
+        font-size: 0.85rem; /* Slight reduction */
+    }
+    .gms-block-list-item {
+        padding: 10px 16px;
+    }
+    .component-margin {
+        padding: 0 10px;
+    }
+}
+
+/* Small screens (768px) */
+@media (max-width: 768px) {
+    /* Hide .section--item-summary */
+    .section--item-summary {
+        display: none;
+    }
+    .gms-heading-xl {
+        font-size: 1rem; /* Reduced for smaller screens */
+        text-align: center;
+    }
+    .curriculum--curriculum-sub-header--QqY6d {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .gms-block-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .section--item-title--EWIuI {
+        font-size: 0.8rem; /* Further reduction */
+        text-align: center;
+    }
+    .gms-btn-ghost {
+        padding: 8px 16px;
+    }
+    .component-margin {
+        padding: 0 5px;
+    }
+}
+
+/* Extra Small screens (max-width: 600px) */
+@media (max-width: 600px) {
+    .gms-heading-xl {
+        font-size: 0.9rem; /* Smaller size */
+    }
+    .gms-text-sm {
+        font-size: 0.75rem;
+    }
+    .gms-btn-ghost {
+        padding: 5px 10px;
+    }
+}
+
+/* Very Small screens (max-width: 320px) */
+@media (max-width: 320px) {
+    .gms-heading-xl {
+        font-size: 0.8rem; /* Very small */
+    }
+    .gms-text-sm {
+        font-size: 0.65rem;
+    }
+    .gms-btn-ghost {
+        padding: 4px 8px;
+    }
+}
